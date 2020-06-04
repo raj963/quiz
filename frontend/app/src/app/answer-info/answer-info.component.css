@@ -1,0 +1,30 @@
+
+.answer{
+    background-color: skyblue;
+    width: 42%;
+}
+
+.editor{
+    background-color: brown;
+    color: white;
+}
+
+.butt {
+    padding: 10px;
+    display: inline;
+    border-radius: 2px;
+    font-family: "Arial";
+    border: 0;
+    margin: 0 10px;
+    background: red;
+    font-size: 15px;
+    line-height: 15px;
+    color: white;
+   
+    box-sizing: content-box;
+}
+
+.question{
+    /* background-color: skyblue; */
+  height:   120px;
+}

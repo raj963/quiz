@@ -1,0 +1,24 @@
+<div class="w3-container w3-green">
+    
+        <p>Question Answer</p>
+      
+    <div class="hometab"*ngIf="question">
+        <span *ngIf="!showAnswer">
+            <app-question-info [question]="question"></app-question-info>
+        </span>
+        <span  *ngIf="showAnswer">
+            <app-answer-info [answer]="question.files.answers" (notifyParent)="getAnswer($event)"></app-answer-info>  
+        </span>
+       
+       
+    </div>
+    <div class="hometab" *ngIf="question">
+        <app-answer-info [answer]="question.files.stage" [showAnswerView]="false" (notifyParent)="getAnswer($event)"></app-answer-info>
+    </div>
+    <span class="butt" (click)="showHideAns()">Show/Hide Answer</span>
+    <span class="butt" (click)="next()" *ngIf="!showAnswer">next</span>
+    <span class="butt" (click)="pre()" *ngIf="!showAnswer">pre</span>
+   
+
+
+</div>

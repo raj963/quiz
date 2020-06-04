@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+app-home .w3-red {
+    color: #fff!important;
+    background-color: #f44336!important;
+}
+
+app-home p {
+    color: #fff!important;
+    background-color: #f44336!important;
+    display: block;
+    height: 25px;
+    /* padding: 9px; */
+}
+
+app-home .w3-container{
+    /* padding: 0.01em 16px; */
+    border-style: solid;
+
+    
+}

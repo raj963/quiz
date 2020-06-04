@@ -1,0 +1,9 @@
+<div class="question">
+  <textarea rows="4" cols="70" [(ngModel)]="tempanswer" class="editor">
+ </textarea>
+ <div *ngIf="!showAnswerView">
+  <span class="butt"(click)="submit()" >submit</span>
+  <span class="butt" (click)="reset()">reset</span>
+ </div>
+
+</div>
