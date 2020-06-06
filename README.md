@@ -41,7 +41,7 @@ Run `python app.py` in backend root (will watch files and restart server on port
 
 ### Frontend development
 
-Navigate inside the frontend directory: `cd frontend`
+Navigate inside the frontend directory: `cd frontend/app`
 
 Assure you have [Nodejs](https://nodejs.org/en/), [Yarn](https://yarnpkg.com/en/docs/install) and the [angular-cli](https://cli.angular.io/) installed.
 
