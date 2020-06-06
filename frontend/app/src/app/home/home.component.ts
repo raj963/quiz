@@ -91,6 +91,8 @@ export class HomeComponent implements OnInit {
 
   }
 
+
+  // itrateover answers object and validate
   private itrateAnswer(answers: any, stageKey: string[], objKey: string[]) {
     for (let [key, value] of Object.entries(answers)) {
       console.log(`${key}: ${value}`);
@@ -120,6 +122,8 @@ export class HomeComponent implements OnInit {
     }
   }
 
+
+
   next() {
     let index = this.questionList.indexOf(this.question);
     if (this.questionList[++index]) {
@@ -140,6 +144,7 @@ export class HomeComponent implements OnInit {
     this.showAnswer = !this.showAnswer
   }
 
+  // make flask  server call 
   getQuestions() {
     return this.http.get<any>('http://127.0.0.1:8081/question').subscribe(response => {      
       this.questionList = response;

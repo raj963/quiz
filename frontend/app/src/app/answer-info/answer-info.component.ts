@@ -14,14 +14,12 @@ export class AnswerInfoComponent implements OnInit, OnChanges {
   @Input() answer: any
   @Output() notifyParent = new EventEmitter<any>()
   ngOnInit(): void {
-    this.tempanswer = '';
-    this.setAnswerString();
-    // this.answer = String(this.answer)
+    this.reset()
+   
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    this.tempanswer = '';
-    this.setAnswerString();
+    this.reset()
     // changes.prop contains the old and the new value...
   }
 
