@@ -1,4 +1,4 @@
-# Data Science Web Application Tutorial
+# quiz Web Application Tutorial
 
 This repository is meant to demonstrate the use of Flask and Angular to build a simple, but state-of-the-art, web application which can be used for POCs.
 
