@@ -3,11 +3,11 @@ services:
   frontend:
     image: frontend-angular
     build:
-      context: ./frontend/app
+      context: ./frontend
       dockerfile: Dockerfile
     container_name: "frontend-app"
     volumes:
-      - ./frontend/app/app/src:/app/src # for watching files
+      - ./frontend/src:/app/src # for watching files
     ports:
       - "4200:4200"
   backend:
