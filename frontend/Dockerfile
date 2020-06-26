@@ -1,8 +1,8 @@
-FROM node:8.11.2-alpine as node
+FROM node:12.7-alpine 
 
 # set up angular cli
 
-RUN npm install 
+RUN yarn global add @angular/cli 
 
 WORKDIR /app
 COPY package.json /app
