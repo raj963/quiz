@@ -18,3 +18,18 @@ app-home .w3-container{
 
     
 }
+
+tham{
+    width:"129";
+    height:"139";
+}
+
+.poster{
+    display: flex;
+    justify-content: center;
+}
+
+.posterLength{
+    width: 265px;
+    height: 275px;
+}
